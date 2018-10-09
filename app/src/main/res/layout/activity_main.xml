@@ -10,39 +10,47 @@
         android:id="@+id/rollButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Roll"
+        android:layout_marginTop="20dp"
+        android:text="@string/rollButton"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/totalOutputView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numFaceEditText" />
 
     <TextView
-        android:id="@+id/totalOutputView"
+        android:id="@+id/totalOutputTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Result"
+        android:layout_marginTop="20dp"
+        android:text="@string/totalOutput"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/individualOutputView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rollButton" />
 
     <TextView
         android:id="@+id/individualOutputView"
-        android:layout_width="300"
-        android:layout_height="150"
-        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxHeight="250dp"
+        android:maxWidth="350dp"
+        android:minHeight="0dp"
         android:scrollbars="vertical"
-        android:text="Individual Roll Results"
+        android:text="@string/individualRollResults"
         android:textAlignment="center"
         android:textIsSelectable="true"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomCreditTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalOutputTextView"
+        tools:layout_width="wrap_content" />
 
     <EditText
         android:id="@+id/numDiceEditText"
@@ -50,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Enter Number of Dice"
+        android:hint="@string/numDiceText"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,11 +72,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter Number of Faces"
+        android:hint="@string/numFaceText"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numDiceEditText" />
+
+    <TextView
+        android:id="@+id/bottomCreditTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/pageFooterText"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Dice Roller</string>
+    <string name="rollButton">Roll</string>
+    <string name="totalOutput">Total Result</string>
+    <string name="pageFooterText">Made by an idiot, for the same idiot</string>
+
+    <string name="individualRollResults">Individual Roll Results</string>
+    <string name="numDiceText">Enter Number of Dice</string>
+    <string name="numFaceText">Enter Number of Faces</string>
 </resources>
